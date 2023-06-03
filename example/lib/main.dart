@@ -36,19 +36,19 @@ class AudioPage extends StatelessWidget {
     return Column(
       children: <Widget>[
         Text(this.audioPath),
-        RaisedButton(
+        TextButton(
           child: Text('Open'),
           onPressed: () {
             Audio.open(this.audioPath);
           },
         ),
-        RaisedButton(
+        TextButton(
           child: Text('Play'),
           onPressed: () {
             Audio.play();
           },
         ),
-        RaisedButton(
+        TextButton(
           child: Text('Pause'),
           onPressed: () {
             Audio.pause();
